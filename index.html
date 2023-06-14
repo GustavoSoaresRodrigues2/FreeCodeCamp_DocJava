@@ -8,32 +8,32 @@
     <title>Documentação Java Básico</title>
 </head>
 <body>
+    
+    <!-- NavBar -->
+    <nav id="navbar">
+        <header class="titulo_pag-a">Documentação Java Básico</header>
+        <ul>
+            <li><a href="#Java_Basico" class="nav-link">Java Básico</a></li>
+            <li><a href="#Java_e_sua_historia" class="nav-link">Java e sua história</a></li>
+            <li><a href="#Plataformas" class="nav-link">Plataformas</a></li>
+            <li><a href="#Escolha_sua_IDE" class="nav-link">Escolha sua IDE</a></li>
+            <li><a href="#Anatomia_das_classes" class="nav-link">Anatomia das Classes</a></li>
+            <li><a href="#Tipos_e_Variaveis" class="nav-link">Tipos e Variáveis</a></li>
+            <li><a href="#Operadores" class="nav-link">Operadores</a></li>
+            <li><a href="#Metodos" class="nav-link">Métodos</a></li>
+            <li><a href="#Escopo" class="nav-link">Escopo</a></li>
+            <li><a href="#Palavras_reservadas" class="nav-link">Palavras Reservadas</a></li>
+
+            <!-- COLOCAR OS SUBTITULOS PARA GANHAR CONTEUDO
+                 EX:
+                 JAVA BASICO
+                    SIMPLES
+            -->
+        </ul>
+    </nav>
+    <!-- ///NavBar -->
+
     <main id="main-doc">
-
-        <!-- NavBar -->
-        <nav id="navbar">
-            <header>Dcumentação Java Básico</header>
-            <ul>
-                <li><a href="#Java_Basico" class="nav-link">Java Básico</a></li>
-                <li><a href="#Java_e_sua_historia" class="nav-link">Java e sua história</a></li>
-                <li><a href="#Plataformas" class="nav-link">Plataformas</a></li>
-                <li><a href="#Escolha_sua_IDE" class="nav-link">Escolha sua IDE</a></li>
-                <li><a href="#Anatomia_das_classes" class="nav-link">Anatomia das Classes</a></li>
-                <li><a href="" class="nav-link"></a></li>
-                <li><a href="" class="nav-link"></a></li>
-                <li><a href="" class="nav-link"></a></li>
-                <li><a href="" class="nav-link"></a></li>
-                <li><a href="" class="nav-link"></a></li>
-
-                <!-- COLOCAR OS SUBTITULOS PARA GANHAR CONTEUDO
-                     EX:
-                     JAVA BASICO
-                        SIMPLES
-                -->
-            </ul>
-        </nav>
-        <!-- ///NavBar -->
-
         <!-- SECTIONS -->
 
             <!-- JAVA BASICO -->
@@ -344,7 +344,7 @@
             <!-- ANATOMIA CLASSES -->
         <section class="exe" id="Anatomia_das_classes">
             <header class="titulo_pag">Anatomia das Classes</header>
-            <header class="subtitulo_anatomia">Uma classe bem estruturada, não quer guerra com ninguém!</header>
+            <header class="subtitulo_header">Uma classe bem estruturada, não quer guerra com ninguém!</header>
             <p>
                 A escrita de códigos de um programa é feita através da composição de, palavras pré-definidas pela 
                 linguagem, com as expressões que utilizamos para determinar o nome do nossos arquivos, classes, 
@@ -388,31 +388,222 @@
         </section>
             <!-- ///ANATOMIA CLASSES -->
 
-        
-        <section class="exe" id="exe">
-            <header></header>
-            <p></p>
-            <p></p>
+            <!-- TIPOS VARIAVEIS -->
+        <section class="exe" id="Tipos_e_Variaveis">
+            <header class="titulo_pag">Tipos e Variáveis</header>
+            <p>
+                No Java, existem algumas palavras reservadas, para a representação dos tipos de dados básicos, que 
+                precisam ser manipulados, para a construção de programas. Estes tipos de dados são conhecidos como 
+                tipos primitivos (Primitive Types).
+            </p>
+            <p class="tab-p">
+                <header>Os oito tipos primitivos em Java são:</header>
+                <p>
+                    int, byte, short, long, float, double, boolean e char - esses tipos não são considerados objetos e portanto 
+                    representam valores brutos. Eles são armazenados diretamente na pilha de memória. (Memory stack)
+                </p>
+            </p>
         </section>
-        <section class="exe" id="exe">
-            <header></header>
-            <p></p>
-            <p></p>
+            <!-- TIPOS VARIAVEIS -->
+
+
+        <section class="exe" id="Operadores">
+            <header class="titulo_pag">Operadores</header>
+            <header class="subtitulo_header">
+                Símbolos especiais, que tem um significado próprio para a linguagem e estão associados a determinadas 
+                operações.
+            </header>
+            <p>
+                Geralmente, as primeiras palavras que ouvimos em um curso de programação são: um programa é um conjunto 
+                de instruções lógicas que, quando executadas, produzem algum resultado. Com isso em mente, ao começar a 
+                criar as primeiras linhas de código, logo você notará que é comum receber dados do usuário, prover 
+                alguma lógica para processá-los e então apresentar o resultado desse processamento.
+            </p>
+            <img
+                src="https://3025166959-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjFR9F4NToQ6FD39fU3wC%2Fuploads%2Fgit-blob-44d5e9223bab5f5466d577812ffc1cd8d7ede3b6%2Fimage%20(12)%20(1)%20(1)%20(1).png?alt=media"
+                alt="Operadores na programação">
+            <header>Atribuição</header>
+            <header class="subtitulo_header">Representado pelo símbolo de <code>igualdade "="</code>.</header>
+            <p>
+                O operador de atribuição é utilizado para definir o valor inicial ou sobrescrever o valor de uma 
+                variável. em Java, definimos um tipo, nome e opcionalmente atribuímos um valor à variável através do 
+                operador de atribuição. Exemplos abaixo:
+            </p>
+
+            <p class="tab-codjava">
+                //classe Operadores.java <br>
+                String nome = "GLEYSON";<br>
+                int idade = 22;<br>
+                double peso = 68.5;<br>
+                char sexo = 'M';<br>
+                boolean doadorOrgao = false;<br>
+                Date dataNascimento = new Date();<br>
+            </p>
+
+            <header>Aritméticos</header>
+            <p>
+                O operador aritmético, é utilizado para realizar operações matemáticas entre valores numéricos, podendo 
+                se tornar ou não uma expressão mais complexa.
+            </p>
+            <p>
+                Os operadores aritméticos são: <code>+ (adição), - (subtração), * (multiplicação) e / (divisão)</code>.
+            </p>
+            <p class="tab-codjava">
+                // classe Operadores.java<br>
+                double soma = 10.5 + 15.7;<br>
+                int subtração = 113 - 25;<br>
+                int multiplicacao = 20 * 7;<br>
+                int divisao = 15 / 3;<br>
+                int modulo = 18 % 3;<br>
+                double resultado = (10 * 7) + (20/4);<br>
+            </p>
+
+            <header>Relacionais</header>
+            <p>
+                Os operadores relacionais, avaliam a relação entre duas variáveis ou expressões. Neste caso, mais 
+                precisamente, definem se o operando à esquerda é igual, diferente, menor, menor ou igual, maior, maior 
+                ou igual ao da direita, retornando um valor booleano como resultado.
+            </p>
+            <ul>
+                <li>== Quando desejamos verificar se uma variável é IGUAL A outra.</li>
+                <li>!= Quando desejamos verificar se uma variável é DIFERENTE da outra.</li>
+                <li>> Quando desejamos verificar se uma variável é MAIOR QUE a outra.</li>
+                <li>>= Quando desejamos verificar se uma variável é MAIOR OU IGUAL a outra.</li>
+                <li>< Quando desejamos verificar se uma variável é MENOR QUE outra.</li>
+                <li><= Quando desejamos verificar se uma variável é MENOR OU IGUAL a outra.</li>
+            </ul>
+            <p class="tab-codjava">
+                // classe Operadores.java<br>
+                int numero1 = 1;<br>
+                int numero2 = 2;<br>
+                <p></p>
+                if(numero1 > numero2)<br>
+                    <span class="espacoCod">System.out.print("Numero 1 maior que numero 2");</span><br>
+
+                if(numero1 < numero2)<br>
+                    <span class="espacoCod">System.out.print("Numero 1 menor que numero 2");</span><br>
+
+                if(numero1 >= numero2)<br>
+                    <span class="espacoCod">System.out.print("Numero 1 maior ou igual que numero 2");</span><br>
+
+                if(numero1 <= numero2)<br>
+                    <span class="espacoCod">System.out.print("Numero 1 menor ou igual que numero 2");</span><br>
+
+                if(numero1 != numero2)<br>
+                    <span class="espacoCod">System.out.print("Numero 1 é diferente de numero 2");</span><br>
+            </p>
         </section>
-        <section class="exe" id="exe">
-            <header></header>
-            <p></p>
-            <p></p>
+        <section class="exe" id="Metodos">
+            <header>Métodos</header>
+            <header class="subtitulo_header">Todas as ações das aplicações são consideradas métodos.</header>
+            <p>
+                Uma classe é definida por atributos e métodos. Já vimos que atributos são, em sua grande maioria, 
+                variáveis de diferentes tipos e valores. Os métodos, por sua vez, correspondem a <strong>funções</strong>
+                 ou <strong>sub-rotinas</strong> disponíveis dentro de nossas classes.
+            </p>
+            <header>Critério de nomeação de Métodos</header>
+            <p>
+                Esses critérios não são obrigatórios, mas é recomendável que sejam seguidos, pois essas convenções 
+                facilitam a vida dos programadores ao trabalharem em códigos de forma colaborativa. Ao seguir estas 
+                convenções, tornamos o código mais legível para nós e também para outras pessoas. Para métodos, os 
+                critérios são:
+            </p>
+            <ul>
+                <li>Deve ser nomeado como verbo;</li>
+                <li>
+                    Seguir o padrão camelCase (Todas as letras minúsculas com a exceção da primeira letra da segunda 
+                    palavra).
+                </li>
+            </ul>
+            <p>Exemplos sugeridos para nomenclatura de métodos:</p>
+            <p class="tab-codjava">
+                somar(int n1, int n2){}
+                <p></p>
+                abrirConexao(){}
+                <p></p>
+                concluirProcessamento() {}
+                <p></p>
+                findById(int id){} // não se assuste, você verá muito método em inglês em sua jornada
+                <p></p>
+                calcularImprimir(){} // há algo de errado neste método, ele deveria ter uma única finalidade
+            </p>
+
         </section>
-        <section class="exe" id="exe">
-            <header></header>
-            <p></p>
-            <p></p>
+        <section class="exe" id="Escopo">
+            <header>Escopo</header>
+            <p>
+                O escopo pode ser entendido como,o ambiente onde uma variável pode ser acessada. Em Java, o escopo de 
+                variáveis <strong>vai de acordo com o bloco onde ela foi declarada.</strong>
+            </p>
+            <p>
+                A variável é criada no primeiro acesso à ela, se tornando inacessível após o interpretador sair do bloco 
+                de execução, ao qual ela pertence. Portanto, esta variável não pode ser lida ou manipulada por rotinas e 
+                códigos que estão fora do seu bloco de declaração, ou seja, fora do escopo da variável.
+            </p>
+            <p>
+                Em uma Classe, podemos visualizar a diferença de escopos. Os atributos (variáveis) são declarados no 
+                corpo principal da Classe, sendo portanto, acessíveis por todos os métodos.
+            </p>
+            <p>
+                Caso você declare uma variável DENTRO DE UM MÉTODO, o escopo dessa variável está limitado apenas ao 
+                corpo desse método, ou seja, dentro das chaves que limitam o método.
+            </p>
+            <p>
+                Uma parte fundamental na elaboração de algoritmos simples ou complexos é determinar a localização do 
+                código em questão. Sem um domínio sobre escopo de códigos, seu projeto tende a conter falhas estruturais 
+                e comprometer a proposta principal da aplicação.
+            </p>
+            <p class="tab-codjava">
+                public class Conta {<br>
+                    <span class="espacoCod">// variavel da classe conta</span><br>
+                    <span class="espacoCod">double saldo=10.0;</span><br>
+                    <p></p>
+                    <span class="espacoCod">public void sacar(Double valor) {<br></span>
+                        <span class="espacoCod-um">// variavel local de método</span><br>
+                        <span class="espacoCod-um">double novoSaldo = saldo - valor;</span><br>
+                    <span class="espacoCod">}</span><br>
+                    <p></p>
+                    <span class="espacoCod">public void imprimirSaldo(){</span><br>
+                        <span class="espacoCod-um">// disponível em toda classe</span><br>
+                        <span class="espacoCod-um">System.out.println(saldo);</span><br>
+                        <span class="espacoCod-um">// somente o método sacar conhece esta variavel</span><br>
+                        <span class="espacoCod-um">System.out.println(novoSaldo);</span><br>
+                    
+                    <span class="espacoCod">}</span><br>
+                    <p></p>
+                    <span class="espacoCod">public double calcularDividaExponencial(){</span><br>
+                        <span class="espacoCod-um">// variável local de método</span><br>
+                        <span class="espacoCod-um">double valorParcela = 50.0;</span><br>
+                        <span class="espacoCod-um">double valorMontante = 0.0; // começando a variável com valor zero</span><br>
+                        <span class="espacoCod-um">for(int x=1; x<=5; x++) {// x variável de escopo de fluxo</span><br>
+                            <span class="espacoCod-um-dois">// esta variável será reiniciada a cada execução for</span><br>
+                            <span class="espacoCod-um-dois">double valorCalculado = valorParcela * x;</span><br>
+                            <span class="espacoCod-um-dois">valorMontante = valorMontante + valorCalculado;</span><br>
+                        <span class="espacoCod-um">}</span><br>
+                        <span class="espacoCod-um">// escopo de fluxo</span><br>
+                        <span class="espacoCod-um">// x e valorCalculado nunca estarão disponíveis fora do for</span><br>
+                        
+                        <span class="espacoCod-um">return valorMontante;</span><br>
+                    <span class="espacoCod">}</span><br>
+                }<br>
+                
+            </p>
+
         </section>
-        <section class="exe" id="exe">
-            <header></header>
-            <p></p>
-            <p></p>
+        <section class="exe" id="Palavras_reservadas">
+            <header>Palavras Reservadas</header>
+            <p>
+                Palavras reservadas, são identificadores de uma linguagem que já possuem uma finalidade específica, 
+                portanto, não podem ser utilizados para nomear variáveis, classes, métodos ou atributos.
+            </p>
+            <p>
+                A linguagem Java possui 52 palavras reservadas. Todas essas palavras são classificadas em grupos e 
+                escritas com letra minúscula, sendo identificadas com uma cor especial pela maioria das IDE's. Abaixo 
+                temos a lista de palavras agrupadas por suas finalidades.                
+            </p>
+            <img
+                src="https://3025166959-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjFR9F4NToQ6FD39fU3wC%2Fuploads%2Fgit-blob-d55c8e2cee24f556c8be85dcfbba3022ad042ab4%2Fimage%20(10)%20(1)%20(1)%20(1)%20(1)%20(1).png?alt=media"
+                alt="Tabela de palavras reservadas">
         </section>
     </main>
 </body>
