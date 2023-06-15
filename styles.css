@@ -39,11 +39,16 @@ body {
     cursor: pointer;
 }
 
+#navbar header {
+    padding-top: 20px;
+}
+
 #main-doc {
     position: absolute;
     padding: 20px;
     margin-left: 300px;
     margin-bottom: 100px;
+    text-align: left;
 }
 
 section p {
@@ -58,11 +63,15 @@ section li {
 }
 
 code {
-    background-color: #C0C0C0;
-    opca
+    background-color: #DCDCDC;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    border-radius: 5px;
+    
 }
-
-
 
 .titulo_pag-a {
     text-align: center;
@@ -75,17 +84,6 @@ code {
 header {
     font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .spanBlue {
     color: blue;
@@ -101,6 +99,17 @@ header {
     padding-left: 150px;
 }
 
+img {
+    width: 600px;
+    height: 600px;
+}
+
+#Java_e_sua_historia img, #Plataformas img, #Escolha_sua_IDE img {
+    width: 850px;
+}
+
+
+
 @media only screen and (max-width: 850px) {
     #navbar {
         position: absolute;
@@ -113,11 +122,15 @@ header {
         border-bottom: 3px solid gray;
         z-index: 1;
     }
-}
-
-@media only screen and (max-width: 850px) {
+    
     #navbar ul {
         border: 1px solid gray;
         height: 210px;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0;
+        margin-top: 300px;
     }
 }
